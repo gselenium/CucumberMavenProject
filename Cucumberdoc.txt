@@ -1,0 +1,21 @@
+BDD: BDD mean behaviour driven development.
+TDD: Test driven development. 
+
+For BDD there is a frameworks: 
+1. Cucumber framework
+2. Serinity framework.
+
+In cucumber BA people will develop the feature files,
+and share to the development people and QA people.
+based on these feature files dvelopment people will develop the application,
+and QA people will test the application.
+
+In cucumber features files will develop using the below cucumber annotaions:
+@Given
+@When
+@Then
+@And
+@But
+in this test data will create in the feature files only.
+
+
