@@ -3,9 +3,12 @@ package com.edreams.pages.runners;
 import cucumber.api.CucumberOptions;
 import cucumber.api.testng.AbstractTestNGCucumberTests;
 
-@CucumberOptions(features="D:/Online_Batches/BasheerIrland/Workspace/CucumberMavenProject/src/test/resources/com/edreams/features/home/login.feature",
-					 glue="com.edreams.testcases"					 
-					 )
+@CucumberOptions(features="src/test/java1/com/edreams/features/home",							
+					 glue="com.edreams.testcases",
+					 plugin = {"pretty", "json:target/cucumber-reports/Cucumber.json",
+							 "junit:target/cucumber-reports/Cucumber.xml",
+							 "html:target/cucumber-reports/cucumber"
+					 } )					
 public class HomeTestcasesRunner extends AbstractTestNGCucumberTests{
 
 }
