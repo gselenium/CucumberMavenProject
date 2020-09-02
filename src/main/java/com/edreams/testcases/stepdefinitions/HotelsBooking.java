@@ -4,7 +4,7 @@ import cucumber.api.java.en.When;
 public class HotelsBooking {
 	@When("user clicked on Hotels menu")
 	public void user_clicked_on_Hotels_menu() {
-	   System.out.println("user clicked on Hotels menu");
+	   System.out.println("user clicked on Hotels menu");	   
 	}
 
 	@When("user entered where you are going as (.*?)")

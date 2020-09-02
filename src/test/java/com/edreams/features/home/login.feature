@@ -9,10 +9,11 @@ And user clicked on login button
 And user entered email address as <email>
 Then user entered password as <password>
 And user clicked on signin button
+And user closed the browser
 
 
 Examples:
-|browser|url									 	|email						|password			|
+|browser|	url									 	|email						|password			|
 |chrome	|https://www.edreams.com|vardhan@gmail.com|test1234			|
-|firefox|https://www.edreams.com|basheer@gmail.com|seleniumjava	|
+|chrome |https://www.edreams.com|basheer@gmail.com|seleniumjava	|
 

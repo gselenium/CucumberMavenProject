@@ -1,7 +1,10 @@
 package com.edreams.testcases.stepdefinitions;
+import com.edreams.pages.flights.FlightsSearchPage;
+
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 public class FlightsBooking {
+	public FlightsSearchPage flightsearch;
 	@When("user clicked on Flights menu")
 	public void user_clicked_on_Flights_menu() {
 		System.out.println("user clicked on Flights menu");
@@ -13,13 +16,17 @@ public class FlightsBooking {
 	}
 
 	@When("user entered departure address as (.*?)")
-	public void user_entered_departure_address(String departure) {
+	public void user_entered_departure_address(String departure) throws InterruptedException {
 	    System.out.println("user entered departure address as "+departure);
+	    flightsearch = new FlightsSearchPage();
+	    flightsearch.typeDestination(departure);
 	}
 
 	@Then("user entered arrival address as (.*?)")
-	public void user_entered_arrival_address(String arrival) {
+	public void user_entered_arrival_address(String arrival) throws InterruptedException {
 	   System.out.println("user entered arrival address as "+arrival);
+	   flightsearch = new FlightsSearchPage();
+	   flightsearch.typeArrival(arrival);
 	}
 
 	@Then("user entered departure date as (.*?)")

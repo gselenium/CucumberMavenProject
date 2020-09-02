@@ -11,9 +11,10 @@ Then user entered arrival address as <arrival>
 And user entered departure date as <depDate>
 And user entered Return date as <returnDate> 
 And user clicked on search Flights Button
+And user closed the browser
 
 Examples:
 |browser|url									 	|departure	|arrival	|depDate	|returnDate	|
 |chrome	|https://www.edreams.com|LON				|Paris		|Mon, 9/21|Sun, 9/27	|
-|firefox|https://www.edreams.com|Paris			|Dublin		|Fri, 9/23|Fri, 9/30	|
+|chrome|https://www.edreams.com|Paris			|Dublin		|Fri, 9/23|Fri, 9/30	|
 

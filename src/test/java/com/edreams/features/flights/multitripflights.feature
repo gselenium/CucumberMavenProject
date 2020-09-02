@@ -17,6 +17,7 @@ And user entered departure address as <departure>
 Then user entered arrival address as <arrival>
 And user entered departure date as <depDate>
 And user clicked on search Flights Button
+And user closed the browser
 
 Examples:
 |browser|url									 	|departure	|arrival	|depDate	|
