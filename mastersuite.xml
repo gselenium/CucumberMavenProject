@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="MasterSuite">
+	<test  name="AllModulesTestCases">
+		<classes>
+			<class name="com.edreams.pages.runners.CarRentalsRunner"></class>
+			<class name="com.edreams.pages.runners.FlightsRunner"></class>
+			<class name="com.edreams.pages.runners.HomeRunner"></class>
+			<class name="com.edreams.pages.runners.HotelsRunner"></class>
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->
